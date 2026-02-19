@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main>
+  <main>
+
     <nav>
-        <div class="left">Kanban</div>
-        <div class="right">Progress</div>
+      <div class="left">Kanban</div>
+      <div class="right">
+        <buttion class="add-btn">Add New Task</buttion>
+      </div>
     </nav>
+
     <section class="board">
-        <div class="todo">
-            <div class="heading">To Do</div>
-            <div class="count">1</div>
+      <div id="todo" class="task-column">
+        <div class="heading">
+          <div class="task-name">TO Do</div>
+          <div class="count">count</div>
         </div>
-        <div class="Inprogress">
-            <div class="heading">In progress</div>
-            <div class="count">1</div>
+        <div class="task">
+          <h2>word to do</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam ipsa aut, iusto quasi quis laudantium cupiditate?</p>
+          <div class="delete"><button class="delete-btn">Delete</button></div>
         </div>
-        <div class="done">
-            <div class="heading">Done</div>
-            <div class="count">1</div>
+        
+      </div>
+      <div id="inprogress" class="task-column">
+        <div class="heading">
+          <div class="task-name">In Progress</div>
+          <div class="count">count</div>
         </div>
+      </div>
+      <div id="done" class="task-column">
+        <div class="heading">
+          <div class="task-name">Done</div>
+          <div class="count">count</div>
+        </div>
+      </div>
     </section>
-</main>
+
+  </main>
 
 
-    <script src="script.js"></script>
+
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
