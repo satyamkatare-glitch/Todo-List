@@ -93,6 +93,7 @@ section .task-column {
     border: none;
     outline: none;
     border-radius: var(--border-radius-xl);
+    
 }
 
 section .task-column .heading {
@@ -111,7 +112,8 @@ section .task-column .task {
     padding: var(--padding-md);
     margin: 10px;
     border-radius: var(--border-radius-md);
-    gap: 12px;
+    gap: 10px;
+    cursor: grab;
 
 }
 
@@ -125,8 +127,68 @@ section .task-column .task .delete-btn{
     border-radius: var(--border-radius-md);
     border: none;
     outline: none;
-    background-color: var(--delete-btn-background);
+    background-color: var(--delete-btn-background); 
     color: var(--text-color);
     cursor: pointer;
-    text
+    
 }
+
+
+.create-task-modal{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+  display: none;
+}
+
+
+.create-task-modal-active{
+  display: initial;
+}
+
+.create-task-modal .modal-bg{
+    height: 100%;
+    width: 100%;
+     background-color: rgb(61, 61, 61, 0.404);
+    backdrop-filter: blur(5px);
+}
+
+.create-task-modal .add-task-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+
+}
+
+.create-task-modal .add-task-modal input,
+.create-task-modal .add-task-modal textarea{
+    padding: 8px 12px 16px 14px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-md);
+    background-color: var(--add-taskColumn-backgroung);
+    color: var(--text-color);
+}
+
+.create-task-modal .add-task-modal .modal-btn{
+   padding: 12px 24px;
+    border-radius: var(--border-radius-md);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.create-task-modal .add-task-modal #close-btn{
+    background-color: var(--delete-btn-background);
+    color: var(--text-color);
+  
+}
+
+
+
+
