@@ -106,6 +106,7 @@ section .task-column .heading {
 }
 
 section .task-column .task {
+    
     display: flex;
     flex-direction: column;
     background-color: var(--add-task-background);
@@ -114,8 +115,12 @@ section .task-column .task {
     border-radius: var(--border-radius-md);
     gap: 10px;
     cursor: grab;
-
 }
+
+section .task-column .task:active{
+     cursor: grabbing;
+}
+
 
 section .task-column .task .delete{
     align-self: flex-end;
